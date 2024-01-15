@@ -8,7 +8,7 @@ import ErrorPage from "./Pages/Error"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.scss";
 import { Helmet } from 'react-helmet';
-import SharedLayout from './Pages/SharedLayout';
+import RootLayout from './Layouts/RootLayout'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <meta name="description" content="Digitise Your Business" />
       </Helmet>
       <Routes>
-        <Route path="/" element={<SharedLayout/>}>
+        <Route path="/" element={<RootLayout/>}>
         <Route index element={<HomePage/>} />
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/contact" element={<ContactPage/>} />
